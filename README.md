@@ -4,7 +4,7 @@
 
 Finding a torrent these days sucks. One site is a minefield of fake download buttons. Another hides the real link under a popup that spawns two more tabs. And after all that, half the results are dead, zero seeders.
 
-delugefinder is a torrent finder that lives in your terminal. One search checks a short, curated list of reputable sources at once, and whatever you pick gets sent straight to your own [Deluge](https://deluge-torrent.org) instance over its Web UI — delugefinder itself never downloads anything.
+DelugeFinder is a torrent finder that lives in your terminal. One search checks a short list of reputable sources at once, and whatever you pick gets sent straight to your own [Deluge](https://deluge-torrent.org) instance over its Web UI — delugefinder itself never downloads anything.
 
 ## Get started
 
@@ -28,20 +28,11 @@ Type what you're looking for and press Enter. Results stream in from every sourc
 
 ## What it searches
 
-A short, hand-picked list of trusted sources:
-
-| Category | Sources |
-| --- | --- |
-| Games | FitGirl |
-| Movies | YTS, The Pirate Bay, 1337x |
-| TV | EZTV, The Pirate Bay, 1337x |
-| Anime | Nyaa, SubsPlease |
-
-Games are the only category that can run code, so they come from FitGirl alone, a repacker with a long, trusted track record; everything else is plain video and subtitles. If a source is down, the search carries on without it, and delugefinder tells you which one is offline.
+Type `p`
 
 ## Contributing
 
-To run or work on delugefinder locally:
+To run or work on DelugeFinder locally:
 
 1. Clone the repository and open the folder.
 2. Install dependencies:
@@ -58,18 +49,6 @@ To run or work on delugefinder locally:
    npx dlfi
    ```
 
-Before opening a PR, skim [CONTRIBUTING.md](CONTRIBUTING.md); it lays out the bar with examples from real merged PRs.
-
 ## Privacy
 
 delugefinder itself never opens a connection to the torrent network — it only searches, then hands the chosen magnet link to your own Deluge instance over its Web UI. Everything after that (downloading, seeding, where files land) is Deluge's territory, configured however you already run it.
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=zap0xfce2%2Fdelugefinder&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=zap0xfce2/delugefinder&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=zap0xfce2/delugefinder&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=zap0xfce2/delugefinder&type=date&legend=top-left" />
- </picture>
-</a>
