@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import { sourceStyle, SOURCE_STYLE, COLOR } from "./theme";
 
 describe("sourceStyle", () => {
-  it("returns the exact static style for a known source id", () => {
-    expect(sourceStyle("yts")).toEqual(SOURCE_STYLE.yts);
+  it("has no hand-picked entries left (all sources are dynamic)", () => {
+    expect(SOURCE_STYLE).toEqual({});
   });
 
   it("falls back to a neutral dot when no id is given", () => {

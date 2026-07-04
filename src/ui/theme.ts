@@ -28,17 +28,9 @@ export const RULE = "#6b6577";
 
 export const GUTTER = 2;
 
-export const SOURCE_STYLE: Record<SourceId, { tag: string; color: string }> = {
-  fitgirl: { tag: "FG", color: COLOR.accent },
-  yts: { tag: "YTS", color: COLOR.good },
-  eztv: { tag: "EZTV", color: COLOR.warn },
-  nyaa: { tag: "NYAA", color: COLOR.bright },
-  subsplease: { tag: "SUB", color: "#b9a7e6" },
-  "tpb-movies": { tag: "TPB", color: "#5fd0c5" },
-  "tpb-tv": { tag: "TPB", color: "#5fd0c5" },
-  "x1337-movies": { tag: "1337", color: "#f6a55c" },
-  "x1337-tv": { tag: "1337", color: "#f6a55c" },
-};
+// All sources are now dynamically discovered (Prowlarr indexers), so there are no
+// hand-picked entries left — every id resolves through the fallback below.
+export const SOURCE_STYLE: Record<SourceId, { tag: string; color: string }> = {};
 
 // Reused hues (no new gradient) for sources without a hand-picked SOURCE_STYLE entry,
 // e.g. dynamically discovered Prowlarr indexers.

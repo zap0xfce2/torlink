@@ -36,7 +36,7 @@ import { ProwlarrSettingsPrompt } from "./components/ProwlarrSettingsPrompt";
 import { footerHints } from "./keymap";
 import { COLOR, ICON } from "./theme";
 import { useMouseWheel } from "./hooks/useMouseWheel";
-import type { Source, SourceId } from "../sources/types";
+import type { Source } from "../sources/types";
 
 export function App({
   initialMagnet,
