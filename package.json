@@ -33,8 +33,7 @@
     "tui",
     "terminal",
     "cli",
-    "ink",
-    "fitgirl"
+    "ink"
   ],
   "author": "Zap0xfce2",
   "license": "MIT",
