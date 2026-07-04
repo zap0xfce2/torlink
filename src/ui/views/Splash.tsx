@@ -25,6 +25,7 @@ export function Splash() {
   return (
     <Box
       height={Math.max(1, rows - 1)}
+      backgroundColor={COLOR.bg}
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
