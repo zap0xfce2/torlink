@@ -16,20 +16,6 @@ DelugeFinder finds torrents and sends them to Deluge, right from your terminal. 
    npx dlfi
    ```
 
-DelugeFinder opens straight to a search bar: search for what you want, or paste in a magnet link or a bare infohash. Press `o` once to point it at your Deluge Web UI (address + password) and `p` to point it at your Prowlarr instance (address + API key); both are saved locally after that. From there it's all keypresses, nothing to memorize, and `?` brings up the full list anytime.
-
-## Finding something
-
-Type what you're looking for and press Enter. Results stream in from every source as they answer, tagged with size and how many people are sharing each one, so you can see what'll come down fast. Arrow to what you want and press `d` to send it to Deluge, or `y` to just copy the magnet link instead.
-
-<p align="center">
-  <img src="preview/browse.svg" alt="DelugeFinder's browse view: the sidebar, the search bar, and merged results from every source" style="max-width: 832px; width: 100%; height: auto;">
-</p>
-
-## What it searches
-
-DelugeFinder has no built-in source list — every source is an indexer discovered live from your own [Prowlarr](https://prowlarr.com) instance. Add Prowlarr once (see below) and every indexer configured there shows up as its own source, grouped by category (Games, Movies, TV, Anime). Until Prowlarr is connected, searches simply return nothing.
-
 ## Adding a Deluge connection
 
 Press `o` anywhere in the app to open the Deluge connection panel:
@@ -49,6 +35,18 @@ Press `p` anywhere in the app to open the Prowlarr connection panel:
 3. Press Enter to save, or `Esc` to cancel without saving.
 
 Once saved, DelugeFinder loads your configured indexers in the background and merges their results into every search.
+
+## Finding something
+
+Type what you're looking for and press Enter. Results stream in from every source as they answer, tagged with size and how many people are sharing each one, so you can see what'll come down fast. Arrow to what you want and press `d` to send it to Deluge, or `y` to just copy the magnet link instead. From there it's all keypresses, nothing to memorize, and `?` brings up the full list anytime.
+
+<p align="center">
+  <img src="preview/browse.svg" alt="DelugeFinder's browse view: the sidebar, the search bar, and merged results from every source" style="max-width: 832px; width: 100%; height: auto;">
+</p>
+
+## What it searches
+
+DelugeFinder has no built-in source list — every source is an indexer discovered live from your own [Prowlarr](https://prowlarr.com) instance. Add Prowlarr once and every indexer configured there shows up as its own source, grouped by category (Games, Movies, TV, Anime). Until Prowlarr is connected, searches simply return nothing.
 
 ## Contributing
 
